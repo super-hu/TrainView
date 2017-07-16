@@ -24,7 +24,7 @@ public class PieView extends View {
     //数据源
     private ArrayList<PieModel> lists;
 
-    //初始化弧度位置 默认从270度（时钟12点位置绘制）
+    //初始化弧度位置 270（时钟12点开始）
     private float mStartAngle = 270;
 
     //单前View的宽度
@@ -32,8 +32,21 @@ public class PieView extends View {
     //单前View的高度
     private int height;
 
-    public void setLists(ArrayList<PieModel> lists) {
+    public void setLists(float mStartAngle,ArrayList<PieModel> lists) {
+        if(lists==null || lists.size()==0){
+            return;
+        }
+        this.mStartAngle=mStartAngle;
+        //处理数据 把进度转百分比
+        int sumProgress=0;
+        for(PieModel pieModel:lists){
+            sumProgress+=pieModel.getProgress();
+        }
+        for(PieModel pieModel:lists){
+            pieModel.setPercentage(pieModel.getProgress()/sumProgress * 360);
+        }
         this.lists = lists;
+        invalidate();
     }
 
     public PieView(Context context) {
@@ -46,10 +59,10 @@ public class PieView extends View {
 
     public PieView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
         mPaint=new Paint();
+        mPaint.setAntiAlias(true);
+        mPaint.setStyle(Paint.Style.FILL);
         mRectF=new RectF();
-
     }
 
     @Override
@@ -66,17 +79,22 @@ public class PieView extends View {
         if(lists==null || lists.size()==0){
             return;
         }
-        //因为要绘制饼状图是个圆，View的宽度和高度需要一致
+        //内部圆的宽度的高度
+        int arcWidth=width-getPaddingLeft()-getPaddingRight();
+        int arcHeight=height-getPaddingTop()-getPaddingBottom();
+        //因为要绘制饼状图是个圆，View的宽度和高度需要一致 - padding值
         //取最大的作为半径
-        int radius=Math.max(width,height) /2 ;
+        int radius=Math.max(arcWidth,arcHeight) /2 ;
 
-        //设置圆弧的矩形以单前View的整个位置
-        mRectF.set(0,0,radius*2,radius*2);
+        //设置圆弧的矩形以单前View的整个位置-padding
+        mRectF.set(getPaddingLeft(),getPaddingTop(),radius*2+getPaddingLeft(),radius*2+getPaddingTop());
+
         for(PieModel pieModel:lists){
             mPaint.setColor(pieModel.getColor());
-            float currentProgress=pieModel.getProgress();
-            canvas.drawArc(mRectF,mStartAngle,currentProgress,true,mPaint);
-            mStartAngle+=currentProgress;
+            float currentPercentage=pieModel.getPercentage();
+            canvas.drawArc(mRectF,mStartAngle,currentPercentage,true,mPaint);
+            //绘制后起始角度+
+            mStartAngle+=currentPercentage;
         }
     }
 

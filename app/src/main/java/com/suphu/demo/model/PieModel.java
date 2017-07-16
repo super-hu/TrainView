@@ -15,6 +15,8 @@ public class PieModel {
 
     private float progress;//进度
 
+    private float percentage;//计算后的百分比
+
     public PieModel(int id, String name, int color, float progress) {
         this.id = id;
         this.name = name;
@@ -48,6 +50,14 @@ public class PieModel {
 
     public float getProgress() {
         return progress;
+    }
+
+    public float getPercentage() {
+        return percentage;
+    }
+
+    public void setPercentage(float percentage) {
+        this.percentage = percentage;
     }
 
     public void setProgress(float progress) {
