@@ -1,4 +1,25 @@
-自定义View系列
-    1.自定义简单的饼状图  https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/PieView.java
+### 自定义View系列
+
+- Android 自定义View (一)
+- Android 自定义View (二)
+    - ++[自定义TextView带drawable](null)++
+-  Android 自定义View (三) 圆环交替 等待效果
+    - ++[自定义饼状图](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/PieView.java)++
+    - ++[自定义圆形进度条](null)++
+- Android 自定义View (四) 视频音量调控
+    - ++[爱奇艺的音量横向进度调控](null)++
+
+
+
+
+
+
+
+##### 感谢
+[Hongyang的博客](http://blog.csdn.net/lmj623565791)
+
+
+
+
 
 
