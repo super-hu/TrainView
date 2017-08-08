@@ -1,6 +1,7 @@
 ### 自定义View系列
 
 - Android 自定义View (一)
+    - ++[简单的textview](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/MyTestView.java)++
 - Android 自定义View (二)
     - ++[自定义TextView带drawable](null)++
 -  Android 自定义View (三) 圆环交替 等待效果
