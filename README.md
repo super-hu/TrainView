@@ -3,10 +3,10 @@
 - Android 自定义View (一)
     - ++[简单的textview](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/MyTestView.java)++
 - Android 自定义View (二)
-    - ++[自定义TextView带drawable](null)++
+    - ++[自定义TextView带drawable](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/TextDrawableView.java)++
 -  Android 自定义View (三) 圆环交替 等待效果
     - ++[自定义饼状图](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/PieView.java)++
-    - ++[自定义圆形进度条](null)++
+    - ++[自定义圆形进度条](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/CircleProgressView.java)++
 - Android 自定义View (四) 视频音量调控
     - ++[爱奇艺的音量横向进度调控](null)++
 
