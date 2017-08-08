@@ -2,10 +2,31 @@
 <resources>
 
     <declare-styleable name="MyTestView">
-
         <attr name="text_value" format="string"/>
         <attr name="text_color" format="color"/>
         <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="TextDrawableView">
+
+        <attr name="textdrawable_value" format="string"/>
+        <attr name="textdrawable_color" format="color"/>
+        <attr name="textdrawable_size" format="dimension"/>
+        <attr name="textdrawable_img" format="reference"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgressView">
+
+        <attr name="progress_bg_colcor" format="color"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress" format="integer"/>
+        <attr name="progress_width" format="dimension"/>
+        <attr name="max_progress" format="integer"/>
 
 
     </declare-styleable>

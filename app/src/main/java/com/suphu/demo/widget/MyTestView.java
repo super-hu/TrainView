@@ -1,4 +1,4 @@
-package com.suphu.demo.model;
+package com.suphu.demo.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,6 +18,7 @@ import java.util.Random;
 
 /**
  * Created by huchao on 2017/8/7.
+ * textview
  */
 
 public class MyTestView extends View implements View.OnClickListener{

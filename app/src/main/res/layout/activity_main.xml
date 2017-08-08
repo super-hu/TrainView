@@ -16,15 +16,29 @@
        <!--android:layout_gravity="center"/>-->
 
 
-   <com.suphu.demo.model.MyTestView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:text_value="hello,view"
-       app:text_size="15sp"
-       app:text_color="#666"
+   <!--<com.suphu.demo.widget.MyTestView-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--app:text_value="hello,view"-->
+       <!--app:text_size="15sp"-->
+       <!--app:text_color="#666"-->
+       <!--android:padding="10dp"-->
+       <!--/>-->
 
-       android:padding="10dp"
+   <!--<com.suphu.demo.widget.TextDrawableView-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--app:textdrawable_color="#333"-->
+       <!--app:textdrawable_size="16sp"-->
+       <!--app:textdrawable_value="22222"-->
+       <!--app:textdrawable_img="@mipmap/ic_launcher"-->
+       <!--/>-->
+
+
+   <com.suphu.demo.widget.CircleProgressView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       app:progress_width="5dp"
+       app:progress_text_size="15sp"
        />
-
-
 </LinearLayout>
