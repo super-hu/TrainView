@@ -31,4 +31,25 @@
 
     </declare-styleable>
 
+
+    <declare-styleable name="VolumeView">
+
+        <attr name="volume_count" format="integer"/>
+        <attr name="volume_color" format="color"/>
+        <attr name="volume_bg_color" format="color"/>
+        <attr name="volume_width" format="dimension"/>
+        <attr name="volume_spacing" format="dimension"/>
+        <attr name="volume_bitmap" format="reference"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="VolumeHorizontalView">
+        <attr name="volume_horizontal_totalProgress" format="integer"/>
+        <attr name="volume_horizontal_bgColor" format="color"/>
+        <attr name="volume_horizontal_color" format="color"/>
+        <attr name="volume_horizontal_bitmap" format="reference"/>
+        <attr name="volume_horizontal_height" format="reference"/>
+    </declare-styleable>
+
 </resources>

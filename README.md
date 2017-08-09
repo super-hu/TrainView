@@ -8,7 +8,8 @@
     - ++[自定义饼状图](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/PieView.java)++
     - ++[自定义圆形进度条](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/CircleProgressView.java)++
 - Android 自定义View (四) 视频音量调控
-    - ++[爱奇艺的音量横向进度调控](null)++
+    - ++[视频音量](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/VolumeView.java)++
+    - ++[爱奇艺的音量横向进度调控](https://github.com/hcadoid/CustomView/blob/master/app/src/main/java/com/suphu/demo/widget/VolumeHorizontalView.java)++
 
 
 

@@ -35,10 +35,22 @@
        <!--/>-->
 
 
-   <com.suphu.demo.widget.CircleProgressView
-       android:layout_width="100dp"
+   <!--<com.suphu.demo.widget.CircleProgressView-->
+       <!--android:layout_width="100dp"-->
+       <!--android:layout_height="100dp"-->
+       <!--app:progress_width="5dp"-->
+       <!--app:progress_text_size="15sp"-->
+       <!--/>-->
+
+   <!--<com.suphu.demo.widget.VolumeView-->
+       <!--android:layout_width="100dp"-->
+       <!--android:layout_height="100dp"-->
+       <!--app:volume_bitmap="@mipmap/ic_launcher"-->
+       <!--/>-->
+
+   <com.suphu.demo.widget.VolumeHorizontalView
+       android:layout_width="200dp"
        android:layout_height="100dp"
-       app:progress_width="5dp"
-       app:progress_text_size="15sp"
-       />
+       android:padding="10dp"
+       app:volume_horizontal_bitmap="@mipmap/ic_launcher"/>
 </LinearLayout>
