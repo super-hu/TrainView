@@ -87,18 +87,20 @@ public class MyTestView extends View implements View.OnClickListener{
         int width=0;
         int height=0;
 
-        if (widthMode==MeasureSpec.AT_MOST){
-            width=rect.width()+getPaddingLeft()+getPaddingRight();
-        }else{
+        if (widthMode==MeasureSpec.EXACTLY){
             width=widthSize;
+        }else{
+            width=rect.width()+getPaddingLeft()+getPaddingRight();
         }
 
-        if(heightMode==MeasureSpec.AT_MOST){
-            height=rect.height()+getPaddingTop()+getPaddingBottom();
-        }else{
+        if(heightMode==MeasureSpec.EXACTLY){
             height=heightSize;
+        }else{
+            height=rect.height()+getPaddingTop()+getPaddingBottom();
         }
-        Log.d("MyTestView","width:"+width);
+
+
+        Log.d("MyTestView","width:"+width+",height:"+height);
         setMeasuredDimension(width,height);
 
     }
